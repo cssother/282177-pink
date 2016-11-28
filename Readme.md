@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Левшенко](https://up.htmlacademy.ru/adaptive/9/user/282177).
-* Наставник: [Сергей Зубов]
+* Наставник: `Неизвестно`.
 
 ---
 
