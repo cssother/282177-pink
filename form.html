@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Form</title>
-</head>
-<body>
-  <header class="header header--form-page">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="header header--form-page">
       <section class="upper-header">
-        <a class="logo logo--header-logo">Pink</a>
+        <button type="button" class="logo logo--header-logo">Pink</button>
         <a class="navigation"></a>
         <nav class="navigation-menu">
-          <a href="#" class="navigation-menu-link">Главная</a>
-          <a href="photo.html" class="navigation-menu-link">Фотографии</a>
-          <a href="#" class="navigation-menu-link">Конкурс</a>
-          <a href="#" class="navigation-menu-link">htmlacademy</a>
+          <a href="#" class="navigation-menu__link">Главная</a>
+          <a href="photo.html" class="navigation-menu__link">Фотографии</a>
+          <a href="#" class="navigation-menu__link">Конкурс</a>
+          <a href="#" class="navigation-menu__link">htmlacademy</a>
         </nav>
-        <p class="goal">Конкурс на самое безбашеное путешествие с Пинк</p>
+        <h1 class="goal">Конкурс на самое безбашеное путешествие с Пинк</h1>
       </section>
-  </header>
-  <main>
-  	<p class="user-proposal">
-  	  Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-  	</p>
-  	<section class="form-impression">
-      <form class="impressions" action="http://htmlacademy.ru" method="post">
-        <div class="form-persons-identification">
-          <label for="family-input" class="persons-identification__label">Фамилия</label>
-          <input type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required>
-          <label for="name-input" class="persons-identification__label">Имя</label>
-          <input type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required>
-          <label for="father-name" class="persons-identification__label">Отчество</label>
-          <input type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="form-persons-progress">
-          <h3 class="form-part-header">
-            Ваши безбашенные<br>достижения в путешествии
-          </h3>
-          <ul>
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="selfi-with-snark" checked id="selfi-with-snark"><label class="persons-progress-item__label" for="selfi-with-snark">Сделал селфи с акулой</label>
-            </li>
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="the-best-suntan" checked id="the-best-suntan"><label class="persons-progress-item__label" for="the-best-suntan">Обгорел на пляже</label>
-            </li>            
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="saw-chak" id="saw-chak"><label class="persons-progress-item__label" for="saw-chak">Видел Чака Норриса</label>
-            </li>
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs"><label class="persons-progress-item__label" for="bought-souvenirs">Накупил сувениров</label>
-            </li>
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="held-tower" checked id="held-tower"><label class="persons-progress-item__label" for="held-tower">Удержал башню</label>
-            </li>
-            <li class="persons-progress-item">
-              <input class="persons-progress-item__input" type="checkbox" name="destroyed-the-hotel"  id="destroyed-the-hotel"><label class="persons-progress-item__label" for="destroyed-the-hotel">Разгромил отель</label>
-            </li>
-          </ul>
-        </div>
-        <div class="form-contacts">
-          <label class="form-contacts__label" for="address-of-the-hero"></label>
-          <input class="form-contacts__input" type="text" id="address-of-the-hero">
-          <label class="form-contacts__label" for="phone-of-the-hero"></label>
-          <input class="form-contacts__input" type="text" id="phone-of-the-hero">
-        </div>
-        <div class="form-travelling-app">
-          <h3 class="form-part-header">С каким приложением путешествовали?</h3>
-          <ul>
-          	<li class="travelling-app-item">
-          	  <input class="travelling-app-item__input" type="radio" name="application" checked id="pink-for-ios"><label class="travelling-app-item__label" for="pink-for-ios">Pink на iOS</label>
-          	</li>
-          	<li class="travelling-app-item">
-          	  <input class="travelling-app-item__input" type="radio" name="application" id="pink-for-android"><label class="travelling-app-item__label" for="pink-for-android">Pink для Android</label>
-          	</li>
-          	<li class="travelling-app-item">
-          	  <input class="travelling-app-item__input" type="radio" name="application" id="pink-windows-phone"><label class="travelling-app-item__label" for="pink-windows-phone">Pink Windows Phone</label>
-          	</li>
-          </ul>          
-        </div>
-        <div class="form-describe-emotions">
-          <h3 class="form-part-header">Опишите свои эмоции</h3>
-          <textarea class="describe-emotions__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
-        </div>
-        <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
-      </form>
-  	</section>
-  </main>
-  <footer>
-  	<img src="http://placehold.it/150x100" alt="">
-  	<a class="logo logo--footer-logo"></a>
-  	<div class="social">
-      <a class="twitter-icon" href="#">Twitter</a>
-      <a class="facebook-icon" href="#">Facebook</a>
-      <a class="other-icon" href="#">noname</a>
-  	</div>
-  	<div class="develop">
-  		<span class="develop__text"></span>
-  		<img src="http://placehold.it/150x100" alt="">
-  	</div>
-  </footer>	
-</body>
+    </header>
+    <main>
+      <p class="user-proposal">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+      <section class="form-impression">
+        <form class="impressions" action="http://htmlacademy.ru" method="post">
+          <div class="form-persons-identification">
+            <label for="family-input" class="persons-identification__label">Фамилия</label>
+            <input type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required>
+            <label for="name-input" class="persons-identification__label">Имя</label>
+            <input type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required>
+            <label for="father-name" class="persons-identification__label">Отчество</label>
+            <input type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form-persons-progress">
+            <h3 class="form-part-header">
+              Ваши безбашенные<br>достижения в путешествии
+            </h3>
+            <ul>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="selfi-with-snark" checked id="selfi-with-snark">
+                <label class="persons-progress-item__label" for="selfi-with-snark">Сделал селфи с акулой</label>
+              </li>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="the-best-suntan" checked id="the-best-suntan">
+                <label class="persons-progress-item__label" for="the-best-suntan">Обгорел на пляже</label>
+              </li>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="saw-chak" id="saw-chak">
+                <label class="persons-progress-item__label" for="saw-chak">Видел Чака Норриса</label>
+              </li>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+                <label class="persons-progress-item__label" for="bought-souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="held-tower" checked id="held-tower">
+                <label class="persons-progress-item__label" for="held-tower">Удержал башню</label>
+              </li>
+              <li class="persons-progress-item">
+                <input class="persons-progress-item__input" type="checkbox" name="destroyed-the-hotel" id="destroyed-the-hotel">
+                <label class="persons-progress-item__label" for="destroyed-the-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-contacts">
+            <label class="form-contacts__label" for="address-of-the-hero"></label>
+            <input class="form-contacts__input" type="text" id="address-of-the-hero">
+            <label class="form-contacts__label" for="phone-of-the-hero"></label>
+            <input class="form-contacts__input" type="text" id="phone-of-the-hero">
+          </div>
+          <div class="form-travelling-app">
+            <h3 class="form-part-header">С каким приложением путешествовали?</h3>
+            <ul>
+              <li class="travelling-app-item">
+                <input class="travelling-app-item__input" type="radio" name="application" checked id="pink-for-ios">
+                <label class="travelling-app-item__label" for="pink-for-ios">Pink на iOS</label>
+              </li>
+              <li class="travelling-app-item">
+                <input class="travelling-app-item__input" type="radio" name="application" id="pink-for-android">
+                <label class="travelling-app-item__label" for="pink-for-android">Pink для Android</label>
+              </li>
+              <li class="travelling-app-item">
+                <input class="travelling-app-item__input" type="radio" name="application" id="pink-windows-phone">
+                <label class="travelling-app-item__label" for="pink-windows-phone">Pink Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-describe-emotions">
+            <h3 class="form-part-header">Опишите свои эмоции</h3>
+            <textarea class="describe-emotions__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+          </div>
+          <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img src="http://placehold.it/150x100" alt="">
+      <a class="logo logo--footer-logo"></a>
+      <div class="social">
+        <a class="twitter-icon" href="#">Twitter</a>
+        <a class="facebook-icon" href="#">Facebook</a>
+        <a class="other-icon" href="#">noname</a>
+      </div>
+      <div class="develop">
+        <span class="develop__text">Разработано</span>
+        <img src="http://placehold.it/150x100" alt="">
+      </div>
+    </footer>
+  </body>
 </html>
