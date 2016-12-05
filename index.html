@@ -5,8 +5,165 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <section class="upper-header">
+        <button type="button" class="logo logo--header-logo">Pink</button>
+        <a class="navigation"></a>
+        <nav class="navigation-menu">
+          <a href="#" class="navigation-menu__link">Главная</a>
+          <a href="photo.html" class="navigation-menu__link">Фотографии</a>
+          <a href="#" class="navigation-menu__link">Конкурс</a>
+          <a href="#" class="navigation-menu__link">htmlacademy</a>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="download-the-app">
+        <button class="download-the-app-button">Скачать приложение</button>
+        <img class="apple-logo" src="http://placehold.it/150x100" alt="">
+        <img class="android-logo" src="http://placehold.it/150x100" alt="">
+        <img class="microsoft-logo" src="http://placehold.it/150x100" alt="">
+        <p class="operating-systems">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+      <section class="app-possibility">
+        <h2 class="motivation">
+          Устали от серости мегаполиса?
+          <br> Нам есть, что вам предложить!
+        </h2>
+        <article class="app-possibility-list">
+          <div class="be-glad">
+            <span class="be-glad-header">
+            Поднимает настроение
+            </span>
+            <p class="be-glad-description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </div>
+          <div class="change-world-around">
+            <span class="change-world-around-header">
+            Меняет мир вокруг
+            </span>
+            <p class="change-world-around-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </div>
+          <div class="make-friends">
+            <span class="make-friends-header">
+            Заводит новых друзей
+            </span>
+            <p class="make-friends-description">
+              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+          <img class="app-image" src="http://placehold.it/150x100" alt="">
+        </article>
+      </section>
+      <section class="slider-users-reviews">
+        <input type="radio" name="point" id="slider-review-radio-first" checked>
+        <input type="radio" name="point" id="slider-review-radio-second">
+        <input type="radio" name="point" id="slider-review-radio-third">
+        <div class="slider-users-reviews-controls">
+          <label for="slider-review-radio-first" class="review-control-radio-first"></label>
+          <label for="slider-review-radio-second" class="review-control-radio-second"></label>
+          <label for="slider-review-radio-third" class="review-control-radio-third"></label>
+        </div>
+        <div class="slider-users-reviews-content">
+          <div class="slide-first-user-review">
+            <h2 class="reviewers-name">Николый Петров</h2>
+            <p class="reviewers-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
+          <div class="slide-second-user-review">
+            <h2 class="reviewers-name"></h2>
+            <p class="reviewers-text">
+            </p>
+          </div>
+          <div class="slide-third-user-review">
+            <h2 class="reviewers-name"></h2>
+            <p class="reviewers-text">
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="slider-categories-of-app">
+        <input type="radio" name="radio-categories-of-app" id="simple-category" checked>
+        <input type="radio" name="radio-categories-of-app" id="standart-category">
+        <input type="radio" name="radio-categories-of-app" id="full-category">
+        <div class="slider-categories-of-app-controls">
+          <label for="simple-category" class="category-control-radio-first"></label>
+          <label for="standart-category" class="category-control-radio-second"></label>
+          <label for="full-category" class="category-control-radio-third"></label>
+        </div>
+        <div class="slider-categories-of-app-content">
+          <div class="slide-simple-category">
+            <div class="app-category-header">
+              <h2 class="app-category-name"></h2>
+              <span class="app-category-price"></span>
+            </div>
+            <ul class="app-list-features">
+              <li class="app-feature1-name">Розовый фильтр</li>
+              <li class="app-feature2-name">Смайлики</li>
+              <li class="app-feature3-name">Комментарии</li>
+            </ul>
+          </div>
+          <div class="slide-standart-category">
+            <div class="app-category-header">
+              <h2 class="app-category-name">Стандарт</h2>
+              <span class="app-category-price">3.99 USD</span>
+            </div>
+            <ul class="app-list-features">
+              <li class="app-feature1-name">Розовый фильтр</li>
+              <li class="app-feature2-name">Смайлики</li>
+              <li class="app-feature3-name">Комментарии</li>
+            </ul>
+          </div>
+          <div class="slide-full-category">
+            <div class="app-category-header">
+              <h2 class="app-category-name"></h2>
+              <span class="app-category-price"></span>
+            </div>
+            <ul class="app-list-features">
+              <li class="app-feature1-name">Розовый фильтр</li>
+              <li class="app-feature2-name">Смайлики</li>
+              <li class="app-feature3-name">Комментарии</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts-introduction">
+          <h2 class="contacts-introduction-text">
+            Остались вопросы?
+            <br> Свяжитесь с нами!
+          </h2>
+        </div>
+        <div class="how-to-contact">
+          <div class="call-us">
+            <p class="call-us-act how-to-contact--what-do">Звоните:</p>
+            <a class="contact-phone how-to-contact--do-font-pink" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="write-to-us">
+            <p class="write-to-us-act how-to-contact--what-do">Пишите:</p>
+            <a class="contact-mail how-to-contact--do-font-pink" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="go-to">
+            <p class="go-to-act how-to-contact--what-do">
+              Приезжайте в гости:
+            </p>
+            <p class="address how-to-contact--do-font-pink">
+              ул. Большая
+              <br>Конюшенная, 19/8
+            </p>
+            <div class="dislocation">
+              <a class="show-map" href="#">Карта</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Не уверен, можно ли последний блок обозначить как футер-->
   </body>
 </html>
