@@ -6,17 +6,21 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header header--index-header">
       <section class="upper-header">
         <a href="#" class="logo logo--header-logo">Pink</a>
         <button type="button" class="navigation-button">Меню</button>
-        <nav class="navigation-menu">
-          <a href="#" class="navigation-menu__link">Главная</a>
-          <a href="photo.html" class="navigation-menu__link">Фотографии</a>
-          <a href="#" class="navigation-menu__link">Конкурс</a>
-          <a href="#" class="navigation-menu__link">htmlacademy</a>
-        </nav>
       </section>
+      <nav class="navigation-menu">
+        <a href="#" class="navigation-menu__link">Главная</a>
+        <a href="photo.html" class="navigation-menu__link">Фотографии</a>
+        <a href="#" class="navigation-menu__link">Конкурс</a>
+        <a href="#" class="navigation-menu__link">htmlacademy</a>
+      </nav>
+      <div class="header__space"></div>
+      <div class="header-hand-with-phone">
+        Изображение руки с телефоном
+      </div>
     </header>
     <main>
       <section class="download-the-app">
@@ -29,50 +33,54 @@
         </p>
       </section>
       <section class="app-possibility">
-        <h2 class="motivation">
-          Устали от серости мегаполиса?
-          <br> Нам есть, что вам предложить!
-        </h2>
+        <div class="motivation">
+          <p class="motivation__question">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="motivation__answer">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
         <article class="app-possibility-list">
-          <div class="be-glad">
-            <span class="be-glad-header">
+          <div class="app-possibility-list-item">
+            <span class="app-possibility-list-item__header">
             Поднимает настроение
             </span>
-            <p class="be-glad-description">
+            <p class="app-possibility-list-item__description">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </div>
-          <div class="change-world-around">
-            <span class="change-world-around-header">
+          <div class="app-possibility-list-item">
+            <span class="app-possibility-list-item__header">
             Меняет мир вокруг
             </span>
-            <p class="change-world-around-description">
+            <p class="app-possibility-list-item__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </div>
-          <div class="make-friends">
-            <span class="make-friends-header">
+          <div class="app-possibility-list-item">
+            <span class="app-possibility-list-item__header">
             Заводит новых друзей
             </span>
-            <p class="make-friends-description">
+            <p class="app-possibility-list-item__description">
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
-          <img class="app-image" src="http://placehold.it/150x100" alt="">
+          <img class="app-image" src="img/iphone-screen-mobile@1x.png" alt="скриншот приложения">
         </article>
       </section>
       <section class="slider-users-reviews">
-        <input type="radio" name="point" id="slider-review-radio-first" checked>
-        <input type="radio" name="point" id="slider-review-radio-second">
-        <input type="radio" name="point" id="slider-review-radio-third">
+        <input class="slider-users-reviews__radio" type="radio" name="point" id="slider-review-radio-first" checked>
+        <input class="slider-users-reviews__radio" type="radio" name="point" id="slider-review-radio-second">
+        <input class="slider-users-reviews__radio" type="radio" name="point" id="slider-review-radio-third">
         <div class="slider-users-reviews-controls">
-          <label for="slider-review-radio-first" class="review-control-radio-first"></label>
-          <label for="slider-review-radio-second" class="review-control-radio-second"></label>
-          <label for="slider-review-radio-third" class="review-control-radio-third"></label>
+          <label for="slider-review-radio-first" class="review-control-radio-first">первый</label>
+          <label for="slider-review-radio-second" class="review-control-radio-second">второй</label>
+          <label for="slider-review-radio-third" class="review-control-radio-third">третий</label>
         </div>
         <div class="slider-users-reviews-content">
           <div class="slide-first-user-review">
-            <h2 class="reviewers-name">Николый Петров</h2>
+            <h2 class="reviewers-name">Николай Петров</h2>
             <p class="reviewers-text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
@@ -99,15 +107,15 @@
           <label for="full-category" class="category-control-radio-third"></label>
         </div>
         <div class="slider-categories-of-app-content">
-          <div class="slide-simple-category">
+          <div class="slide-simple-category flag-hit-category">
             <div class="app-category-header">
               <h2 class="app-category-name"></h2>
               <span class="app-category-price"></span>
             </div>
             <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+              <li class="app-list-features__feature-name feature-name--yes">Розовый фильтр</li>
+              <li class="app-list-features__feature-name">Смайлики</li>
+              <li class="app-list-features__feature-name">Комментарии</li>
             </ul>
           </div>
           <div class="slide-standart-category">
@@ -116,9 +124,9 @@
               <span class="app-category-price">3.99 USD</span>
             </div>
             <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+              <li class="app-list-features__feature-name feature-name--yes">Розовый фильтр</li>
+              <li class="app-list-features__feature-name feature-name--yes">Смайлики</li>
+              <li class="app-list-features__feature-name">Комментарии</li>
             </ul>
           </div>
           <div class="slide-full-category">
@@ -127,9 +135,9 @@
               <span class="app-category-price"></span>
             </div>
             <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+              <li class="app-list-features__feature-name feature-name--yes">Розовый фильтр</li>
+              <li class="app-list-features__feature-name feature-name--yes">Смайлики</li>
+              <li class="app-list-features__feature-name feature-name--yes">Комментарии</li>
             </ul>
           </div>
         </div>
