@@ -3,76 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="header">
-      <section class="upper-header">
-        <button type="button" class="logo logo--header-logo">Pink</button>
-        <a class="navigation"></a>
-        <nav class="navigation-menu">
-          <a href="#" class="navigation-menu__link">Главная</a>
-          <a href="photo.html" class="navigation-menu__link">Фотографии</a>
-          <a href="#" class="navigation-menu__link">Конкурс</a>
-          <a href="#" class="navigation-menu__link">htmlacademy</a>
-        </nav>
-      </section>
+  <body class="body">
+    <header class="header header--index-header">
+      <nav class="header__nav-list navigation">
+        <div class="navigation__upper">
+          <a class="navigation__logo" href="#"></a>
+          <button type="button" class="navigation__button"></button>
+        </div>
+        <a class="navigation__item" href="#">Главная</a>
+        <a class="navigation__item" href="photo.html">Фотографии</a>
+        <a class="navigation__item" href="form.html">Конкурс</a>
+        <a class="navigation__item" href="#">htmlacademy</a>
+      </nav>
+      <div class="header__space header__space--index-page"></div>
+      <div class="header__hand-with-phone"></div>
     </header>
-    <main>
-      <section class="download-the-app">
-        <button class="download-the-app-button">Скачать приложение</button>
-        <img class="apple-logo" src="http://placehold.it/150x100" alt="">
-        <img class="android-logo" src="http://placehold.it/150x100" alt="">
-        <img class="microsoft-logo" src="http://placehold.it/150x100" alt="">
-        <p class="operating-systems">
+    <main class="main">
+      <section class="download">
+        <button class="download__button">Скачать приложение</button>
+        <img class="download__apple-logo" src="http://placehold.it/150x100" alt="">
+        <img class="download__android-logo" src="http://placehold.it/150x100" alt="">
+        <img class="download__microsoft-logo" src="http://placehold.it/150x100" alt="">
+        <p class="download__operating-systems">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
       <section class="app-possibility">
-        <h2 class="motivation">
-          Устали от серости мегаполиса?
-          <br> Нам есть, что вам предложить!
-        </h2>
-        <article class="app-possibility-list">
-          <div class="be-glad">
-            <span class="be-glad-header">
-            Поднимает настроение
-            </span>
-            <p class="be-glad-description">
+        <p class="motivation-sentense">
+            Устали от серости мегаполиса?
+        </p>
+        <p class="motivation-sentense">
+            Нам есть, что вам предложить!
+        </p>
+        <div class="app-possibility__list">
+          <div class="app-possibility__item">
+            <span>Поднимает настроение</span>
+            <p>
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </div>
-          <div class="change-world-around">
-            <span class="change-world-around-header">
-            Меняет мир вокруг
-            </span>
-            <p class="change-world-around-description">
+          <div class="app-possibility__item">
+            <span>Меняет мир вокруг</span>
+            <p>
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </div>
-          <div class="make-friends">
-            <span class="make-friends-header">
-            Заводит новых друзей
-            </span>
-            <p class="make-friends-description">
+          <div class="app-possibility__item">
+            <span>Заводит новых друзей</span>
+            <p>
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
-          <img class="app-image" src="http://placehold.it/150x100" alt="">
-        </article>
-      </section>
-      <section class="slider-users-reviews">
-        <input type="radio" name="point" id="slider-review-radio-first" checked>
-        <input type="radio" name="point" id="slider-review-radio-second">
-        <input type="radio" name="point" id="slider-review-radio-third">
-        <div class="slider-users-reviews-controls">
-          <label for="slider-review-radio-first" class="review-control-radio-first"></label>
-          <label for="slider-review-radio-second" class="review-control-radio-second"></label>
-          <label for="slider-review-radio-third" class="review-control-radio-third"></label>
         </div>
-        <div class="slider-users-reviews-content">
-          <div class="slide-first-user-review">
-            <h2 class="reviewers-name">Николый Петров</h2>
-            <p class="reviewers-text">
+        <img class="app-possibility__image" src="img/iphone-screen-mobile@1x.png" alt="скриншот приложения">
+      </section>
+      <section class="slider-reviews">
+        <input class="slider-reviews__radio" type="radio" name="point" id="slider-review-radio-first" checked>
+        <input class="slider-reviews__radio" type="radio" name="point" id="slider-review-radio-second">
+        <input class="slider-reviews__radio" type="radio" name="point" id="slider-review-radio-third">
+        <div class="slider-reviews__controls">
+          <label for="slider-review-radio-first" class="slider-reviews__control-first">первый</label>
+          <label for="slider-review-radio-second" class="slider-reviews__control-second">второй</label>
+          <label for="slider-review-radio-third" class="slider-reviews__control-third">третий</label>
+        </div>
+        <div class="slider-reviews__list review">
+          <div class="review__first-review">
+            <span class="review__name">Николай Петров</span>
+            <p class="review__text">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </div>
@@ -88,79 +87,75 @@
           </div>
         </div>
       </section>
-      <section class="slider-categories-of-app">
+      <section class="slider-categories">
         <input type="radio" name="radio-categories-of-app" id="simple-category" checked>
         <input type="radio" name="radio-categories-of-app" id="standart-category">
         <input type="radio" name="radio-categories-of-app" id="full-category">
-        <div class="slider-categories-of-app-controls">
+        <div class="slider-categories__controls">
           <label for="simple-category" class="category-control-radio-first"></label>
           <label for="standart-category" class="category-control-radio-second"></label>
           <label for="full-category" class="category-control-radio-third"></label>
         </div>
-        <div class="slider-categories-of-app-content">
-          <div class="slide-simple-category">
-            <div class="app-category-header">
-              <h2 class="app-category-name"></h2>
-              <span class="app-category-price"></span>
+        <div class="slider-categories__list slide-list">
+          <div class="slide-list__item">
+            <div class="item__header">
+              <span class="item__name">Lite</span>
+              <span class="item__price">2.99 USD</span>
             </div>
-            <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+            <ul>
+              <li>Розовый фильтр</li>
+              <li>Смайлики</li>
+              <li>Комментарии</li>
             </ul>
           </div>
-          <div class="slide-standart-category">
-            <div class="app-category-header">
-              <h2 class="app-category-name">Стандарт</h2>
-              <span class="app-category-price">3.99 USD</span>
+          <div class="slide-list__item  slide-list slide-list__item--flag-hit-category">
+            <div class="item__header">
+              <span class="item__name">Стандарт</span>
+              <span class="item__price">3.99 USD</span>
             </div>
-            <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+            <ul>
+              <li>Розовый фильтр</li>
+              <li>Смайлики</li>
+              <li>Комментарии</li>
             </ul>
           </div>
-          <div class="slide-full-category">
-            <div class="app-category-header">
-              <h2 class="app-category-name"></h2>
-              <span class="app-category-price"></span>
+          <div class="slide-list__item  slide-list">
+            <div class="item__header">
+              <span class="item__name">Full</span>
+              <span class="item__price">5.99 USD</span>
             </div>
-            <ul class="app-list-features">
-              <li class="app-feature1-name">Розовый фильтр</li>
-              <li class="app-feature2-name">Смайлики</li>
-              <li class="app-feature3-name">Комментарии</li>
+            <ul>
+              <li>Розовый фильтр</li>
+              <li>Смайлики</li>
+              <li>Комментарии</li>
             </ul>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts-introduction">
-          <h2 class="contacts-introduction-text">
+        <p class="motivation-sentense">
             Остались вопросы?
             <br> Свяжитесь с нами!
-          </h2>
+        </p>
+        <div class="contacts__variant-item">
+            <p class="contacts__what-do">Звоните:</p>
+            <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
-        <div class="how-to-contact">
-          <div class="call-us">
-            <p class="call-us-act how-to-contact--what-do">Звоните:</p>
-            <a class="contact-phone how-to-contact--do-font-pink" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <div class="contacts__variant-item">
+            <p class="contacts__what-do">Пишите:</p>
+            <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="write-to-us">
-            <p class="write-to-us-act how-to-contact--what-do">Пишите:</p>
-            <a class="contact-mail how-to-contact--do-font-pink" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="go-to">
-            <p class="go-to-act how-to-contact--what-do">
+        <div class="contacts__variant-item">
+            <p class="contacts__what-do">
               Приезжайте в гости:
             </p>
-            <p class="address how-to-contact--do-font-pink">
+            <p class="contacts__value">
               ул. Большая
               <br>Конюшенная, 19/8
             </p>
-            <div class="dislocation">
-              <a class="show-map" href="#">Карта</a>
-            </div>
-          </div>
+        </div>
+        <div class="contacts__dislocation">
+            <a class="show-map" href="#">Карта</a>
         </div>
       </section>
     </main>
