@@ -1,4 +1,5 @@
 .header{
+  position: relative;
   width: 320px;
   background-color: #1d2631;
   box-sizing: border-box;
@@ -6,9 +7,22 @@
 .header--index-header{
   min-height: 462px;
 }
+.header__nav-list{
+  min-height: 315px;
+}
 .header__space{
   background: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+}
+.header__hand-with-phone{
+  position: absolute;
+  z-index: 2;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  width:258px;
+  height:286px;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
 }
 .header__space--photo-page{
   min-height: 180px;
