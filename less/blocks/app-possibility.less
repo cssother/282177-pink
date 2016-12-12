@@ -1,16 +1,19 @@
 .app-possibility{
+  position: relative;
   width: 320px;
   min-height: 1000px;
   padding-top: 45px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .app-possibility__question,
 .app-possibility__answer{
+  width: 202px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  width: 202px;
+  text-align: center;
 }
 .app-possibility__question{
   margin-bottom: 50px;
@@ -36,4 +39,11 @@
   color: #283645;
   font: 400 14px / 24px OpenSans;
   text-align: center;
+}
+.app-possibility__image{
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  display: block;
+  margin: 45px 82px 0px 82px;
 }
