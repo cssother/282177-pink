@@ -1,0 +1,22 @@
+.clearfix(){
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  width: 320px;
+  margin: 0 auto;
+  @media @tablet-widths{
+    width: 700px;
+  }
+  @media @desctop-widths{
+    width: 1200px;
+  }
+}
+.no-outline(){
+  outline: none;
+  background: transparent;
+  &::before{
+    display: none;
+  }
+}
