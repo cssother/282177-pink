@@ -39,5 +39,26 @@
   margin-top: 45px;
   min-height: 200px;
   background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
   font-size: 0;
+}
+
+@media @tablet-widths{
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .contacts .motivation-sentense{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__variant-item{
+    width: 35%;
+  }
+  .contacts__dislocation{
+    width: 100%;
+}
 }

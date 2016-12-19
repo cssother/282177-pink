@@ -1,6 +1,4 @@
 .page-title{
-  position: absolute;
-  z-index: 10;
   bottom: 25px;
   right: 0;
   left: 0;
@@ -11,4 +9,17 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+.page-title--index-page{
+  display: none;
+}
+.header__space--photo-page .page-title{
+  width: 360px;
+  margin: auto;
+}
+@media @tablet-widths{
+  .page-title--index-page{
+    display: block;
+    width: 190px;
+  }
 }

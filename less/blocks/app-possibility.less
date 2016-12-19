@@ -1,8 +1,12 @@
 .app-possibility{
   position: relative;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   min-height: 1000px;
   padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -20,7 +24,7 @@
 }
 .app-possibility__list{
   display: block;
-  margin: 0 auto;
+  align-items: center;
   width: 252px;
   min-height: 99px;
   margin-top: 40px;
@@ -46,4 +50,23 @@
   bottom: -60px;
   display: block;
   margin: 45px 82px 0px 82px;
+}
+
+@media @tablet-widths{
+  .app-possibility{
+    min-height: 727px;
+    padding: 0 40px;
+  }
+  .app-possibility__list{
+    margin-top: 40px;
+    width: 300px;
+    align-self: flex-end;
+  }
+  .app-possibility__image{
+    width: 265px;
+    margin: 0;
+  }
+  .app-possibility__item p{
+    text-align: left;
+  }
 }
