@@ -1,5 +1,7 @@
 .navigation{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navigation__upper{
   width: 100%;
@@ -41,4 +43,10 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+}
+@media @desctop-widths{
+  .navigation{
+    flex-direction: row;
+    align-items: center;
+  }
 }
