@@ -27,6 +27,7 @@
   font-weight: 700;
 }
 .contacts__value{
+  display: block;
   margin: 0 auto;
   width: 240px;
   text-align: center;
@@ -39,5 +40,57 @@
   margin-top: 45px;
   min-height: 200px;
   background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
   font-size: 0;
+}
+
+@media @tablet-widths{
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .contacts .motivation-sentense{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts__variant-item{
+    width: 35%;
+  }
+  .contacts__dislocation{
+    width: 100%;
+  }
+}
+@media @desctop-widths{
+  .contacts{
+    min-height: 271px;
+  }
+  .contacts .motivation-sentense{
+    margin-bottom: 55px;
+  }
+  .contacts__variant-item{
+    width: auto;
+    margin: 0;
+  }
+  .contacts__dislocation{
+    width: 100%;
+    min-height: 500px;
+  }
+  .contacts__variant-item:nth-child(1){
+    order: -2;
+  }
+  .contacts__variant-item:nth-child(2){
+    order: -1;
+  }
+  .contacts__variant-item:nth-child(3){
+    order: 1;
+  }
+  .contacts__variant-item:nth-child(4){
+    order: 0;
+  }
+  .contacts__variant-item:nth-child(5){
+    order: 2;
+  }
 }

@@ -1,8 +1,12 @@
 .app-possibility{
   position: relative;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   min-height: 1000px;
   padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -20,13 +24,13 @@
 }
 .app-possibility__list{
   display: block;
-  margin: 0 auto;
+  align-items: center;
   width: 252px;
   min-height: 99px;
   margin-top: 40px;
 }
 .app-possibility__item{
-
+  position: relative;
 }
 .app-possibility__item span{
   display: block;
@@ -40,10 +44,73 @@
   font: 400 14px / 24px OpenSans;
   text-align: center;
 }
-.app-possibility__image{
+.app-possibility__item img{
   position: absolute;
-  z-index: -1;
-  bottom: -60px;
-  display: block;
+  display: none;
+  z-index: 3;
+  bottom: -400px;
+  left: -20px;
   margin: 45px 82px 0px 82px;
+}
+.app-possibility__item:last-child img{
+  display: block;
+}
+
+@media @tablet-widths{
+  .app-possibility{
+    min-height: 727px;
+    padding: 0;
+  }
+  .app-possibility__list{
+    margin-top: 40px;
+    width: 300px;
+    align-self: flex-end;
+  }
+  .app-possibility__item img{
+    width: 265px;
+    left: 200px;
+    bottom: -250px;
+    left: -400px;
+  }
+  .app-possibility__item p{
+    text-align: left;
+  }
+}
+@media @desctop-widths{
+  .app-possibility__list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .app-possibility__item{
+    width: 236px;
+    min-height: 193px;
+    margin-top: 370px;
+    padding-top: 60px;
+    background-color: #fff;
+    text-align: center;
+  }
+  .app-possibility__item:nth-child(2){
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .app-possibility__item span{
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .app-possibility__item p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .app-possibility__item img{
+    display: block;
+    width: 190px;
+    top: -390px;
+    left: -60px;
+    z-index: -1;
+  }
 }

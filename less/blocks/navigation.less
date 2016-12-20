@@ -1,8 +1,10 @@
 .navigation{
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navigation__upper{
-  width: 320px;
+  width: 100%;
   height: 66px;
   opacity: 0.5;
   padding-top: 22px;
@@ -29,7 +31,7 @@
 .navigation__item{
   display: inline-block;
   vertical-align: top;
-  width: 320px;
+  width: 100%;
   height: 63px;
   box-sizing: border-box;
   color: #ffffff;
@@ -41,4 +43,10 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+}
+@media @desctop-widths{
+  .navigation{
+    flex-direction: row;
+    align-items: center;
+  }
 }

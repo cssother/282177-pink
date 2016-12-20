@@ -1,0 +1,80 @@
+.app-effect{
+  display: none;
+}
+@media @tablet-widths{
+  .app-effect{
+    display: block;
+    min-height: 430px;
+    box-sizing: border-box;
+    padding-top: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .app-effect img{
+    display: block;
+    width: 237px;
+    height: 273px;
+    float: left;
+  }
+  .app-effect__title,
+  .app-effect__text,
+  .app-effect__link{
+    width: 285px;
+    float: right;
+    margin-left: 12%;
+  }
+  .app-effect__title{
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  .app-effect__text{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283645;
+  }
+  .app-effect__link{
+    display: block;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media @desctop-widths{
+  .app-effect{
+
+  }
+  .app-effect img{
+    width: 298px;
+    height: 345px;
+  }
+  .app-effect__title,
+  .app-effect__text,
+  .app-effect__link{
+    width: 525px;
+    float: right;
+    margin: 0;
+    text-align: left;
+  }
+  .app-effect__title{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .app-effect__text{
+    margin-bottom: 33px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .app-effect__link{
+    color: #d22856;
+    font-size: 18px;
+    font-family: OpenSans;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}

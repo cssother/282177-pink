@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1">
     <title>Photo</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outlines.css">
   </head>
   <body class="body">
     <header class="header header--photo-header">
@@ -17,15 +21,15 @@
         <a class="navigation__item" href="form.html">Конкурс</a>
         <a class="navigation__item" href="#">htmlacademy</a>
       </nav>
-      <div class="header__space header__space--photo-page"></div>
-      <h1 class="page-title">Фотографии пользователей</h1>
+      <div class="header__space header__space--photo-page">
+        <h1 class="page-title">Фотографии пользователей</h1>
+      </div>
     </header>
     <main class="main">
       <p class="main__user-proposal">
         Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
       </p>
       <section class="photo-list">
-
         <div class="photo-list__item photo-post photo-list__item--panorama">
           <div class="photo-post__img-box photo-post__img-box--panorama">
             <img src="img/panorama-mobile@1x.jpg" alt="">
@@ -33,7 +37,7 @@
           <div class="photo-post-users__comment photo-comment photo-comment--panorama">
             <span class="photo-comment__username">Анна</span>
             <span class="photo-comment__time-published">
-              (5 минут назад)
+            (5 минут назад)
             </span>
             <p class="photo-comment__text">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
@@ -45,127 +49,129 @@
             <span class="photo-comment__like-counter"></span>
           </div>
         </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-1-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Левон</span>
-            <span class="photo-comment__time-published">
+        <div class="photo-list__inner-wrapper">
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-1-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Левон</span>
+              <span class="photo-comment__time-published">
               (5 часов назад)
-            </span>
-            <p class="photo-comment__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
+              </span>
+              <p class="photo-comment__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
+          </div>
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-2-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Антон</span>
+              <span class="photo-comment__time-published"></span>
+              <p class="photo-comment__text">
+                Соседи будут рады!
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
+          </div>
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-3-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Борис</span>
+              <span class="photo-comment__time-published"></span>
+              <p class="photo-comment__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
+          </div>
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-4-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Сергей</span>
+              <span class="photo-comment__time-published"></span>
+              <p class="photo-comment__text">
+                Самая кубанская в мире!
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
+          </div>
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-5-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Максим</span>
+              <span class="photo-comment__time-published"></span>
+              <p class="photo-comment__text">
+                Где снег-то?
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
+          </div>
+          <div class="photo-list__item photo-post">
+            <div class="photo-post__img-box">
+              <img src="img/photo-6-mobile@1x.jpg" alt="">
+            </div>
+            <div class="photo-post-users__comment photo-comment">
+              <span class="photo-comment__username">Надежда</span>
+              <span class="photo-comment__time-published"></span>
+              <p class="photo-comment__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <a class="photo-comment__like">Нравится</a>
+              <span class="photo-comment__text-like">
+              Нравится:
+              </span>
+              <span class="photo-comment__like-counter"></span>
+            </div>
           </div>
         </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-2-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Антон</span>
-            <span class="photo-comment__time-published"></span>
-            <p class="photo-comment__text">
-              Соседи будут рады!
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
-          </div>
-        </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-3-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Борис</span>
-            <span class="photo-comment__time-published"></span>
-            <p class="photo-comment__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
-          </div>
-        </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-4-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Сергей</span>
-            <span class="photo-comment__time-published"></span>
-            <p class="photo-comment__text">
-              Самая кубанская в мире!
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
-          </div>
-        </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-5-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Максим</span>
-            <span class="photo-comment__time-published"></span>
-            <p class="photo-comment__text">
-              Где снег-то?
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
-          </div>
-        </div>
-        <div class="photo-list__item photo-post">
-          <div class="photo-post__img-box">
-            <img src="img/photo-6-mobile@1x.jpg" alt="">
-          </div>
-          <div class="photo-post-users__comment photo-comment">
-            <span class="photo-comment__username">Надежда</span>
-            <span class="photo-comment__time-published"></span>
-            <p class="photo-comment__text">
-              Всем GM и взаимные лайки!
-            </p>
-            <a class="photo-comment__like">Нравится</a>
-            <span class="photo-comment__text-like">
-            Нравится:
-            </span>
-            <span class="photo-comment__like-counter"></span>
-          </div>
-        </div>
-
       </section>
       <p class="main__user-proposal">
-          Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+        Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
       </p>
       <section class="make-post">
         <div class="make-post__img-box">
           <img class="modification-image-place" src="img/photo-7-mobile@1x.jpg" alt="">
         </div>
         <div class="make-post__modification">
-          <a href="#">Изменить размер</a>
-          <a href="#">Заливка</a>
-          <a href="#">Изменить яркость</a>
+          <span><a class="fit__size" href="#">Изменить размер</a></span>
+          <span><a class="fit__paint" href="#">Заливка</a></span>
+          <span><a class="fit__brigt" href="#">Изменить яркость</a></span>
         </div>
-        <span class="make-post__fit fit"></span>
-        <a class="fit__posting-button fit__posting-button--make-post-posting" href="#">Запостить</a>
-        <a class="fit__posting-button fit__posting-button--make-post-not-posting" href="#">Отмена</a>
+        <div class="make-post__fit fit">
+          <a class="fit__posting-button fit__posting-button--make-post-posting" href="#">Запостить</a>
+          <a class="fit__posting-button fit__posting-button--make-post-not-posting" href="#">Отмена</a>
+        </div>
       </section>
     </main>
     <footer class="footer">

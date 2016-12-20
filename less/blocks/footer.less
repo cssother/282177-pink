@@ -1,10 +1,15 @@
 .footer{
-  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
   min-height: 284px;
   padding: 37px 70px;
   box-sizing: border-box;
 }
 .footer__logo{
+  display: block;
   width: 147px;
   height: 40px;
   background-image: url(../img/logo-pink-blue-mobile.svg);
@@ -21,7 +26,6 @@
 .footer__develop{
   width: 137px;
   min-height: 38px;
-  margin: 0 auto;
 }
 .footer__develop span{
   display: inline-block;
@@ -36,4 +40,22 @@
 .footer__develop img{
   display: inline-block;
   vertical-align: top;
+}
+@media @tablet-widths{
+  .footer{
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+@media @desctop-widths{
+  .footer{
+    display: flex;
+    padding: 0 130px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

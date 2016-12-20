@@ -1,11 +1,15 @@
 .review{
+  display: block;
   min-height: 350px;
   padding-top: 43px;
 }
 .review__first-review,
 .review__second-review,
 .review__third-review{
+  display: flex;
+  flex-direction: column;
   min-height: 350px;
+  box-sizing: border-box;
 }
 .review__name{
   display: block;
@@ -20,4 +24,43 @@
   color: #283645;
   font: 400 14px / 30px OpenSans;
   text-align: center;
+}
+.review__users-data{
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+@media @tablet-widths{
+  .review__first-review,
+  .review__second-review,
+  .review__third-review{
+    min-height: 300px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .review__text{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .review__users-data{
+    display: block;
+  }
+}
+@media @desctop-widths{
+  .review__text{
+    width: 677px;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .review__name{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
 }
