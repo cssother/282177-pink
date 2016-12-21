@@ -1,19 +1,18 @@
 .photo-list{
-  background-color: #fff;
-  min-height: 2088px;
-}
-.photo-list__inner-wrapper{
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 40px;
+  background-color: #fff;
+}
+.photo-list__inner-wrapper{
 }
 .photo-list__item{
   margin-top: 20px;
   width: 280px;
 }
-.photo-list__item--panorama{
+div.photo-list__item--panorama{
   margin: 0 auto;
   width: 100%;
 }
@@ -23,13 +22,22 @@ div.photo-comment--panorama{
   margin: 0;
 }
 @media @tablet-widths{
+  .photo-list{
+    padding: 0 20px;
+  }
   .photo-list__item{
     width: 300px;
   }
-  div.photo-list__item--panorama{
-    width: 700px;
+  .photo-list__item img{
+    width: 300px;
+    height: 300px;
   }
   div.photo-comment--panorama{
     width: 100%;
+  }
+}
+@media @desctop-widths{
+  .photo-list{
+    height: auto;
   }
 }

@@ -1,6 +1,6 @@
 .make-post{
-  min-height: 760px;
   padding: 18px 20px 41px 20px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 .make-post__img-box{
@@ -29,7 +29,6 @@
   margin-right: 0;
 }
 .make-post__fit{
-  min-height: 120px;
 }
 @media @tablet-widths{
   .make-post{
@@ -47,6 +46,10 @@
     margin-top: 0;
     flex-direction: column;
   }
+  .make-post__fit{
+    display: flex;
+    flex-direction: column;
+  }
   .make-post__modification span{
     display: block;
     height: 70px;
@@ -60,5 +63,18 @@
     width: 300px;
     float: right;
   }
-
+}
+@media @desctop-widths{
+  .make-post{
+    margin: 0 20px;
+    padding: 60px;
+  }
+  .make-post__modification,
+  .make-post__fit{
+    margin-left: 90px;
+    width: 410px;
+  }
+  .make-post__fit{
+    display: flex;
+  }
 }
