@@ -9,6 +9,7 @@
   padding-top: 41px;
   padding-bottom: 50px;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 .impressions__contacts{
   min-height: 285px;
@@ -25,6 +26,7 @@
 .impressions__describe-emotions{
   min-height: 320px;
   padding-top: 40px;
+  box-sizing: border-box;
 }
 .impressions__describe-emotions textarea{
   display: block;
@@ -53,7 +55,8 @@
     order: -8;
     padding-top: 0;
   }
-  impressions__persons-progress{
+  .impressions__persons-progress{
+    min-height: 0;
     order: -7;
   }
   .impressions__describe-emotions{
@@ -63,5 +66,54 @@
   .impressions__describe-emotions textarea{
     width: 496px;
     height: 189px;
+  }
+}
+@media @desctop-widths{
+  .impressions{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .impressions ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .impressions__persons-identification{
+    margin-bottom: 60px;
+    order: -10;
+    width: 436px;
+  }
+  .impressions__travelling-app{
+    margin-bottom: 60px;
+    order: -9;
+    width: 436px;
+  }
+  .impressions__contacts{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    order: -8;
+    width: 100%;
+    padding-top: 0;
+    min-height: 0;
+  }
+  .impressions__persons-progress{
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 58px 42px 58px 60px;
+    order: -7;
+  }
+  .impressions__describe-emotions{
+    width: 100%;
+    order: 0;
+    padding: 45px 60px;
+  }
+  .impressions__describe-emotions textarea{
+    width: 820px;
+    height: 130px;
   }
 }

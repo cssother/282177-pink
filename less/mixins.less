@@ -22,3 +22,16 @@
     display: none;
   }
 }
+.main-padding(){
+  padding-left: @main-padding-mobile;
+  padding-right: @main-padding-mobile;
+  @media @tablet-widths{
+    padding-left: @main-padding-tablet;
+    padding-right: @main-padding-tablet;
+  }
+  @media @desctop-widths{
+    padding-left: @main-padding-desctop;
+    padding-right: @main-padding-desctop;
+  }
+}
+

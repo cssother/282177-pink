@@ -1,7 +1,11 @@
 .header{
   position: relative;
-  width: auto;
+  width: 100vw;
   background-color: #1d2631;
+  background: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 145px;
   box-sizing: border-box;
 }
 .header--index-header{
@@ -13,8 +17,6 @@
 .header__space{
   position: relative;
   display: flex;
-  background: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
   box-sizing: border-box;
 }
 .header__hand-with-phone{
@@ -40,6 +42,10 @@
 }
 
 @media @tablet-widths{
+  .header{
+    background-position: bottom;
+    background-size: contain;
+  }
   .header__space{
     flex-direction: column;
   }
@@ -58,8 +64,14 @@
   }
 }
 @media @desctop-widths{
+  .header{
+    width: 100vw;
+  }
   .header__space--index-page{
     height: 740px;
     width: 100%;
+  }
+  .header__space--photo-page{
+    min-height: 285px;
   }
 }

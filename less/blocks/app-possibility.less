@@ -52,7 +52,7 @@
   left: -20px;
   margin: 45px 82px 0px 82px;
 }
-.app-possibility__item:last-child img{
+.app-possibility__image-first{
   display: block;
 }
 
@@ -60,17 +60,28 @@
   .app-possibility{
     min-height: 727px;
     padding: 0;
+    padding-top: 55px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .app-possibility .motivation-sentense{
+    min-width: 620px;
   }
   .app-possibility__list{
     margin-top: 40px;
+    margin-left: 290px;
+    padding-bottom: 90px;
     width: 300px;
     align-self: flex-end;
   }
-  .app-possibility__item img{
+  .app-possibility__image-first{
+    position: absolute;
     width: 265px;
     left: 200px;
-    bottom: -250px;
-    left: -400px;
+    bottom: -60px;
+    left: 30px;
   }
   .app-possibility__item p{
     text-align: left;
@@ -79,9 +90,10 @@
 @media @desctop-widths{
   .app-possibility__list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     width: 100%;
+    margin-left: 0;
   }
   .app-possibility__item{
     width: 236px;
@@ -105,6 +117,9 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+  }
+  .app-possibility__image-first{
+    display: none;
   }
   .app-possibility__item img{
     display: block;

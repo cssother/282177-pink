@@ -6,4 +6,12 @@
 .form-persons-progress ul{
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media @desctop-widths{
+  .form-persons-progress ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
