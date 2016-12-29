@@ -1,5 +1,10 @@
 .travelling-app__item{
   margin-bottom: 45px;
+  flex-direction: column;
+}
+.travelling-app__item ul{
+  display: flex;
+  flex-direction: column;
 }
 .travelling-app__item:last-child{
   margin-bottom: 0;
@@ -13,4 +18,9 @@
 }
 .travelling-app__item input{
   display: none;
+}
+@media @desctop-widths{
+  .travelling-app__item{
+    margin-left: 135px;
+  }
 }

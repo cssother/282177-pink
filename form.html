@@ -29,18 +29,21 @@
       </p>
       <section class="form-impression">
         <form class="impressions" action="http://htmlacademy.ru" method="post">
-          <ul class="impressions__persons-identification persons-identification">
-            <li><label for="family-input" class="persons-identification__label">Фамилия:</label>
-            <input class="persons-identification__input" type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required></li>
-            <li><label for="name-input" class="persons-identification__label">Имя:</label>
-            <input class="persons-identification__input" type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required></li>
-            <li><label for="father-name" class="persons-identification__label">Отчество:</label>
-            <input class="persons-identification__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже"></li>
-          </ul>
-          <div class="impressions__persons-progress persons-progress">
-            <h3 class="form-part-header">
-              Ваши безбашенные<br>достижения в путешествии
-            </h3>
+          <fieldset class="impressions__persons-identification-fieldset persons-identification">
+            <ul>
+              <li><label for="family-input" class="persons-identification__label">Фамилия:</label>
+                <input class="persons-identification__input" type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required>
+              </li>
+              <li><label for="name-input" class="persons-identification__label">Имя:</label>
+                <input class="persons-identification__input" type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required>
+              </li>
+              <li><label for="father-name" class="persons-identification__label">Отчество:</label>
+                <input class="persons-identification__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="impressions__persons-progress-fieldset persons-progress">
+            <legend class="persons-progress__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul>
               <li class="persons-progress__item">
                 <input class="persons-progress__input" type="checkbox" name="selfi-with-snark" checked id="selfi-with-snark">
@@ -67,15 +70,22 @@
                 <label class="persons-progress__label" for="destroyed-the-hotel">Разгромил отель</label>
               </li>
             </ul>
-          </div>
-          <div class="impressions__contacts persons-contacts">
-            <label class="persons-contacts__label" for="phone-of-the-hero">Номер телефона</label>
-            <input class="persons-contacts__input" type="text" id="phone-of-the-hero" placeholder="Номер, пожалуйста">
-            <label class="persons-contacts__label" for="address-of-the-hero">Адресок почты</label>
-            <input class="persons-contacts__input" type="text" id="address-of-the-hero" placeholder="Введите почту *">
-          </div>
-          <div class="impressions__travelling-app travelling-app">
-            <h3 class="form-part-header">С каким приложением путешествовали?</h3>
+          </fieldset>
+          <fieldset class="impressions__contacts-fieldset persons-contacts">
+            <legend class="persons-contacts__legend">Контактная информация</legend>
+            <ul>
+              <li>
+                <label class="persons-contacts__label" for="phone-of-the-hero">Номер телефона</label>
+                <input class="persons-contacts__input" type="text" id="phone-of-the-hero" placeholder="Номер, пожалуйста">
+              </li>
+              <li>
+                <label class="persons-contacts__label" for="address-of-the-hero">Адресок почты</label>
+                <input class="persons-contacts__input" type="text" id="address-of-the-hero" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="impressions__travelling-app-fieldset travelling-app">
+            <legend class="travelling-app__legend">С каким приложением путешествовали?</legend>
             <ul>
               <li class="travelling-app__item">
                 <input type="radio" name="application" checked id="pink-for-ios">
@@ -90,15 +100,17 @@
                 <label for="pink-windows-phone">Pink Windows Phone</label>
               </li>
             </ul>
-          </div>
-          <div class="impressions__describe-emotions">
-            <h3 class="form-part-header">Опишите свои эмоции</h3>
+          </fieldset>
+          <fieldset class="impressions__describe-emotions-fieldset">
+            <legend>Опишите свои эмоции</legend>
             <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
-          </div>
-          <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
-          <span class="form-impression__required-fields">
+          </fieldset>
+          <div class="impressions__submit-part">
+            <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
+            <span class="form-impression__required-fields">
             * &mdash; обязательные поля
-          </span>
+            </span>
+          </div>
         </form>
       </section>
     </main>

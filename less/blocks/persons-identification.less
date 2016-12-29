@@ -1,6 +1,5 @@
 .persons-identification__label{
   display: block;
-  width: 75px;
   margin-bottom: 8px;
   margin-left: 22px;
   box-sizing: border-box;
@@ -23,26 +22,31 @@
 }
 @media @tablet-widths{
   .persons-identification li{
-    width: 100%;
+    width: 500px;
+    display: flex;
     height: 59px;
     margin-top: 56px;
+    /*outline: 2px dashed rgba(0, 128, 0, 0.2);*/
   }
   .persons-identification__label{
     display: inline-block;
+    flex-shrink: 0;
   }
   .persons-identification__input{
-    display: inline-block;
-    width: 501px;
+    min-width: 200px;
+    flex-grow: 1;
   }
 }
 @media @desctop-widths{
   .persons-identification li{
     margin-top: 45px;
+    width: 435px;
   }
   .persons-identification__input{
-    width: 340px;
+    min-width: 200px;
   }
   .persons-identification__label{
     margin-left: 0;
+    margin-right: 20px;
   }
 }

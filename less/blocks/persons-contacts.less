@@ -1,3 +1,9 @@
+.persons-contacts ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
 .persons-contacts__label{
   display: block;
   margin-bottom: 8px;
@@ -21,6 +27,10 @@
   border: 2px solid #e5e5e5;
 }
 @media @tablet-widths{
+  .persons-contacts ul{
+    display: flex;
+    flex-direction: row;
+}
   .persons-contacts__label{
     margin-top: 100px;
     margin-bottom: -10px;
@@ -30,8 +40,16 @@
   }
 }
 @media @desctop-widths{
-  .persons-contacts__input {
-    margin-top: 25px;
-    margin-left: -305px;
+  .persons-contacts ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 44px 60px 25px 60px;
 }
+  .persons-contacts__input {
+    width: 375px;
+  }
+  .persons-contacts__label{
+    margin-top: 60px;
+  }
 }
