@@ -1,6 +1,6 @@
 .header{
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-color: #1d2631;
   background: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
@@ -12,9 +12,12 @@
   min-height: 462px;
 }
 .header__nav-list{
+  display: flex;
+  flex-direction: column;
   min-height: 80px;
 }
 .header__space{
+  .container();
   position: relative;
   display: flex;
   box-sizing: border-box;
@@ -73,5 +76,10 @@
   }
   .header__space--photo-page{
     min-height: 285px;
+  }
+  .header__nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
