@@ -10,11 +10,30 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  .app-effect img{
+  .app-effect__image{
+    position: relative;
     display: block;
-    width: 237px;
-    height: 273px;
+    width: 262px;
+    height: 302px;
     float: left;
+  }
+  .app-effect__image:before{
+      content: "24";
+    position: absolute;
+    top: 64px;
+    left: 24px;
+    width: 192px;
+    height: 192px;
+    font-size: 104.6px;
+    font-weight: 700;
+    line-height: 192px;
+    text-align: center;
+    color: #d22856;
+    border: 11px solid #d22856;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 100;
+
   }
   .app-effect__title,
   .app-effect__text,
