@@ -1,19 +1,12 @@
 .photo-post__img-box{
   width: 100%;
-  height: 180px;
-}
-.photo-post__img-box--panorama{
-  width: 100%;
   height: 137px;
 }
-.photo-post__img-box--panorama img{
-  position: absolute;
-  top: 0;
-  left: -@main-padding-mobile;
-  display: inline-block;
-  vertical-align: middle;
-  width: 320px;
-  text-align: center;
+
+.photo-post__img-box--panorama{
+  background-image: url(../img/panorama-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 @media @tablet-widths{
   .photo-post__img-box{
@@ -23,7 +16,6 @@
     height: 510px;
   }
   .photo-post__img-box--panorama img{
-    width: 700px;
     height: 510px;
     left: -@main-padding-tablet;
   }
@@ -34,7 +26,6 @@
   }
   .photo-post__img-box--panorama{
     height: 510px;
-    width: 940px;
   }
   .photo-post__img-box--panorama img{
     width: 1200px;

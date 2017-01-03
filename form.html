@@ -24,106 +24,112 @@
       </div>
     </header>
     <main class="main">
-      <p class="main__user-proposal">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
-      <section class="form-impression">
-        <form class="impressions" action="http://htmlacademy.ru" method="post">
-          <fieldset class="impressions__persons-identification-fieldset persons-identification">
-            <ul>
-              <li><label for="family-input" class="persons-identification__label">Фамилия:</label>
-                <input class="persons-identification__input" type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required>
-              </li>
-              <li><label for="name-input" class="persons-identification__label">Имя:</label>
-                <input class="persons-identification__input" type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required>
-              </li>
-              <li><label for="father-name" class="persons-identification__label">Отчество:</label>
-                <input class="persons-identification__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="impressions__persons-progress-fieldset persons-progress">
-            <legend class="persons-progress__legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="selfi-with-snark" checked id="selfi-with-snark">
-                <label class="persons-progress__label" for="selfi-with-snark">Сделал селфи с акулой</label>
-              </li>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="the-best-suntan" checked id="the-best-suntan">
-                <label class="persons-progress__label" for="the-best-suntan">Обгорел на пляже</label>
-              </li>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="saw-chak" id="saw-chak">
-                <label class="persons-progress__label" for="saw-chak">Видел Чака Норриса</label>
-              </li>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
-                <label class="persons-progress__label" for="bought-souvenirs">Накупил сувениров</label>
-              </li>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="held-tower" checked id="held-tower">
-                <label class="persons-progress__label" for="held-tower">Удержал башню</label>
-              </li>
-              <li class="persons-progress__item">
-                <input class="persons-progress__input" type="checkbox" name="destroyed-the-hotel" id="destroyed-the-hotel">
-                <label class="persons-progress__label" for="destroyed-the-hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="impressions__contacts-fieldset persons-contacts">
-            <legend class="persons-contacts__legend">Контактная информация</legend>
-            <ul>
-              <li>
-                <label class="persons-contacts__label" for="phone-of-the-hero">Номер телефона</label>
-                <input class="persons-contacts__input" type="text" id="phone-of-the-hero" placeholder="Номер, пожалуйста">
-              </li>
-              <li>
-                <label class="persons-contacts__label" for="address-of-the-hero">Адресок почты</label>
-                <input class="persons-contacts__input" type="text" id="address-of-the-hero" placeholder="Введите почту *">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="impressions__travelling-app-fieldset travelling-app">
-            <legend class="travelling-app__legend">С каким приложением путешествовали?</legend>
-            <ul>
-              <li class="travelling-app__item">
-                <input type="radio" name="application" checked id="pink-for-ios">
-                <label for="pink-for-ios">Pink на iOS</label>
-              </li>
-              <li class="travelling-app__item">
-                <input type="radio" name="application" id="pink-for-android">
-                <label for="pink-for-android">Pink для Android</label>
-              </li>
-              <li class="travelling-app__item">
-                <input type="radio" name="application" id="pink-windows-phone">
-                <label for="pink-windows-phone">Pink Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="impressions__describe-emotions-fieldset">
-            <legend>Опишите свои эмоции</legend>
-            <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
-          </fieldset>
-          <div class="impressions__submit-part">
-            <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
-            <span class="form-impression__required-fields">
-            * &mdash; обязательные поля
-            </span>
-          </div>
-        </form>
-      </section>
+      <div class="outer-wrapper">
+        <p class="main__user-proposal">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+      </div>
+      <div class="outer-wrapper">
+        <section class="form-impression">
+          <form class="impressions" action="http://htmlacademy.ru" method="post">
+            <fieldset class="impressions__persons-identification-fieldset persons-identification">
+              <ul>
+                <li><label for="family-input" class="persons-identification__label">Фамилия:</label>
+                  <input class="persons-identification__input" type="text" name="family-input" id="family-input" placeholder="Укажите фамилию *" required>
+                </li>
+                <li><label for="name-input" class="persons-identification__label">Имя:</label>
+                  <input class="persons-identification__input" type="text" name="name" id="name-input" placeholder="Введите ваше имя *" required>
+                </li>
+                <li><label for="father-name" class="persons-identification__label">Отчество:</label>
+                  <input class="persons-identification__input" type="text" name="father-name" id="father-name" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="impressions__persons-progress-fieldset persons-progress">
+              <legend class="persons-progress__legend">Ваши безбашенные достижения в путешествии</legend>
+              <ul>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="selfi-with-snark" checked id="selfi-with-snark">
+                  <label class="persons-progress__label" for="selfi-with-snark">Сделал селфи с акулой</label>
+                </li>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="the-best-suntan" checked id="the-best-suntan">
+                  <label class="persons-progress__label" for="the-best-suntan">Обгорел на пляже</label>
+                </li>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="saw-chak" id="saw-chak">
+                  <label class="persons-progress__label" for="saw-chak">Видел Чака Норриса</label>
+                </li>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+                  <label class="persons-progress__label" for="bought-souvenirs">Накупил сувениров</label>
+                </li>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="held-tower" checked id="held-tower">
+                  <label class="persons-progress__label" for="held-tower">Удержал башню</label>
+                </li>
+                <li class="persons-progress__item">
+                  <input class="persons-progress__input" type="checkbox" name="destroyed-the-hotel" id="destroyed-the-hotel">
+                  <label class="persons-progress__label" for="destroyed-the-hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="impressions__contacts-fieldset persons-contacts">
+              <legend class="persons-contacts__legend">Контактная информация</legend>
+              <ul>
+                <li>
+                  <label class="persons-contacts__label" for="phone-of-the-hero">Номер телефона</label>
+                  <input class="persons-contacts__input" type="text" id="phone-of-the-hero" placeholder="Номер, пожалуйста">
+                </li>
+                <li>
+                  <label class="persons-contacts__label" for="address-of-the-hero">Адресок почты</label>
+                  <input class="persons-contacts__input" type="text" id="address-of-the-hero" placeholder="Введите почту *">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="impressions__travelling-app-fieldset travelling-app">
+              <legend class="travelling-app__legend">С каким приложением путешествовали?</legend>
+              <ul>
+                <li class="travelling-app__item">
+                  <input type="radio" name="application" checked id="pink-for-ios">
+                  <label for="pink-for-ios">Pink на iOS</label>
+                </li>
+                <li class="travelling-app__item">
+                  <input type="radio" name="application" id="pink-for-android">
+                  <label for="pink-for-android">Pink для Android</label>
+                </li>
+                <li class="travelling-app__item">
+                  <input type="radio" name="application" id="pink-windows-phone">
+                  <label for="pink-windows-phone">Pink Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="impressions__describe-emotions-fieldset">
+              <legend>Опишите свои эмоции</legend>
+              <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+            </fieldset>
+            <div class="impressions__submit-part">
+              <input class="form-impression__submit" type="submit" name="submit-form" value="Отправить форму">
+              <span class="form-impression__required-fields">
+              * &mdash; обязательные поля
+              </span>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <a class="footer__logo"></a>
-      <div class="footer__social social">
-        <a class="social__twitter-icon" href="#">Twitter</a>
-        <a class="social__facebook-icon" href="#">Facebook</a>
-        <a class="social__other-icon" href="#">noname</a>
-      </div>
-      <div class="footer__develop">
-        <span>Разработано</span>
-        <img src="img/logo-htmlacademy.svg" alt="">
+      <div class="outer-wrapper">
+        <a class="footer__logo"></a>
+        <div class="footer__social social">
+          <a class="social__twitter-icon" href="#">Twitter</a>
+          <a class="social__facebook-icon" href="#">Facebook</a>
+          <a class="social__other-icon" href="#">noname</a>
+        </div>
+        <div class="footer__develop">
+          <span>Разработано</span>
+          <img src="img/logo-htmlacademy.svg" alt="">
+        </div>
       </div>
     </footer>
   </body>
