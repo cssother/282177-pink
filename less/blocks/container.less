@@ -1,0 +1,31 @@
+.container{
+  .container();
+}
+.container--user-proposal{
+  display: flex;
+}
+.container--photo-list{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+}
+@media @tablet-widths{
+  .container--photo-list{
+    padding: 0 40px;
+  }
+  .container--user-proposal{
+  height: 228px;
+  }
+}
+@media @desctop-widths{
+  .container--user-proposal{
+  height: 285px;
+  }
+  .container--photo-list{
+    height: auto;
+    padding: 0 140px;
+  }
+}
