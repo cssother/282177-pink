@@ -5,10 +5,7 @@
   background-color: #283645;
 }
 .navigation__upper{
-  .container();
-  width: 100%;
   height: 66px;
-  opacity: 0.5;
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 19px;
@@ -53,5 +50,26 @@
   .navigation{
     flex-direction: row;
     align-items: center;
+    background-color: rgba(0,0,0,.3);
+  }
+  .navigation__item{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: none;
+    background-color: transparent;
+  }
+  .navigation__upper{
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+  }
+  .navigation__button{
+    display: none;
+  }
+  .navigation__logo{
+    background-image: url(../img/logo-pink-white-desktop.svg);
   }
 }
