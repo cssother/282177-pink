@@ -12,12 +12,29 @@
   justify-content: space-between;
   background-color: #fff;
 }
+.container--footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media @tablet-widths{
   .container--photo-list{
     padding: 0 40px;
   }
   .container--user-proposal{
   height: 228px;
+  }
+  .container--for-app-possibility-list{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 4;
+  }
+  .container--footer-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
   }
 }
 @media @desctop-widths{
@@ -27,5 +44,8 @@
   .container--photo-list{
     height: auto;
     padding: 0 140px;
+  }
+  .container--for-app-possibility-list{
+    display: inherit;
   }
 }

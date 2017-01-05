@@ -1,7 +1,5 @@
 .app-possibility{
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: auto;
   min-height: 1000px;
   padding-top: 45px;
@@ -22,7 +20,12 @@
 .app-possibility__question{
   margin-bottom: 50px;
 }
+.app-possibility-wrapper{
+  background: url(../img/triangle-white.svg) center top no-repeat #f2f2f2;
+  background-size: 100% 100px;
+}
 .app-possibility__list{
+
   display: block;
   align-items: center;
   width: 252px;
@@ -58,7 +61,7 @@
 
 @media @tablet-widths{
   .app-possibility{
-    min-height: 727px;
+    min-height: 600px;
     padding: 0;
     padding-top: 55px;
     flex-direction: row;
@@ -86,6 +89,13 @@
   .app-possibility__item p{
     text-align: left;
   }
+  .app-possibility__item:nth-child(3) img{
+    position: absolute;
+    display: block;
+    z-index: 3;
+    bottom: -140px;
+    left: -420px;
+}
 }
 @media @desctop-widths{
   .app-possibility__list{
@@ -125,6 +135,6 @@
     display: block;
     top: -290px;
     left: -75px;
-    z-index: -1;
+    z-index: 2;
   }
 }
