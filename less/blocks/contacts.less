@@ -37,9 +37,9 @@
   text-decoration: none;
 }
 .contacts__dislocation{
+  position: relative;
   margin-top: 45px;
-  min-height: 200px;
-  background-image: url(../img/bg-map-mobile@1x.png);
+  height: 200px;
   background-repeat: no-repeat;
   font-size: 0;
 }
@@ -48,7 +48,7 @@
   .contacts{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -61,6 +61,7 @@
   }
   .contacts__dislocation{
     width: 100%;
+    height: 375px;
   }
 }
 @media @desctop-widths{
@@ -71,12 +72,13 @@
     margin-bottom: 55px;
   }
   .contacts__variant-item{
+    display: inline-block;
     width: auto;
     margin: 0;
   }
   .contacts__dislocation{
     width: 100%;
-    min-height: 500px;
+    height: 500px;
   }/*
   .contacts__variant-item:nth-child(1){
     order: -2;

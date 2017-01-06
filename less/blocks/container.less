@@ -12,6 +12,10 @@
   justify-content: space-between;
   background-color: #fff;
 }
+.container--contacts{
+  display: flex;
+  flex-direction: column;
+}
 .container--footer-container{
   display: flex;
   justify-content: center;
@@ -30,6 +34,12 @@
     justify-content: flex-end;
     z-index: 4;
   }
+  .container--contacts{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
   .container--footer-container{
     flex-direction: row;
     align-items: center;
@@ -41,6 +51,9 @@
   .container--navigation{
     display: flex;
     background-color: rgba(0,0,0,.3);
+  }
+  .container--first-motivation-sentense{
+    margin-bottom: 83px;
   }
   .container--user-proposal{
   height: 285px;

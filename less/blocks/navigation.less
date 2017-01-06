@@ -28,6 +28,8 @@
   background-image: url(../img/icon-menu-burger.svg);
 }
 .navigation__list{
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .navigation__item{
@@ -54,6 +56,8 @@
   }
   .navigation__item{
     display: inline-block;
+    width: auto;
+    margin-right: 5%;
     font-size: 18px;
     font-weight: normal;
     line-height: 55px;
@@ -62,14 +66,26 @@
     background-color: transparent;
   }
   .navigation__upper{
-    display: inline-block;
-    width: 150px;
-    height: 100%;
+    width: auto;
+    height: inherit;
+    padding: 0;
+    padding-top: 5px;
   }
   .navigation__button{
     display: none;
   }
   .navigation__logo{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    width: 150px;
+    height: 100%;
     background-image: url(../img/logo-pink-white-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  .navigation__list{
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
