@@ -6,6 +6,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.5.3",
+    "css-mqpacker": "^5.0.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-less": "^1.4.0",
